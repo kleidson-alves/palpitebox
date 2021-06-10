@@ -12,7 +12,7 @@ const Contato = () => {
           <h2 className="font-bold uppercase tracking-wide text-2xl marc">Dados</h2>
           <span className="block my-5 text-lg">Fone: +55 61 995115794</span>
           <span className="block mb-5 text-lg leading-8 w-80">Avenida Contorno - Quadra 89 Lote 5 Parque Estrela Dalva I - Luziânia - GO</span>
-          <h2 className="font-bold uppercase tracking-wide text-2xl marc">Redes</h2>
+          <h2 className="font-bold uppercase tracking-wide text-2xl marc">Redes Sociais</h2>
           <ul className="list">
             <li className="icon hover:border-gray-500">
               <a href="https://www.instagram.com/agropet_atacadaodosbichos/" target="_blank" className= " block p-2.5">

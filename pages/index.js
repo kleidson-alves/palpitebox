@@ -13,7 +13,7 @@ const Index = () =>{
     <div className='my-12 text-center max-w-md mx-auto'>
       <PageTitle title="Home"/>
       <Link  href="/sobre">
-        <a><img className="block mx-auto" src="/logo-agropet-intro.png" alt="Agropet atacadão dos bichos"/></a>
+        <a><img className="block mx-auto hover:opacity-90" src="/logo-agropet-intro.png" alt="Agropet atacadão dos bichos"/></a>
       </Link>
       <p className= "my-5">A Agropet Atacadão dos Bichos sempre busca atender melhor seus clientes.
       Por isso, estamos sempre abertos a ouvir a sua opinião.</p>
