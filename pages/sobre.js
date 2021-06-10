@@ -13,7 +13,7 @@ const Sobre = () =>{
           <p className="w-10/12 mt-8 text-lg">
             Os amantes de pets têm o mesmo objetivo: dar ao seu pet o que há de melhor. 
             Com esse pensamento, fundamos a Agropet Atacadão dos Bichos, um lugar onde 
-            poderá encontrar tudo o que seu pet precisa com foco na qualidade do produto,
+            poderá encontrar tudo o que seu pet precisa e com foco na qualidade do produto,
             pois eles merecem ser tratados bem.
           </p>
         </div>
