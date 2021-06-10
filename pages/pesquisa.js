@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PageTitle from '../components/PageTitle';
+import PageTitle from '../components/Pagetitle/PageTitle';
 
 const Pesquisa = () => {
   const [name, setName] = useState();
@@ -52,7 +52,7 @@ const Pesquisa = () => {
     <div className="my-10 text-center">
       <PageTitle title="Pesquisa"/>
       <h1 className="font-bold mb-4 text-2xl">Críticas e sugestões</h1>
-      <p>O restaurante X sempre busca por atender melhor seus clientes.<br/>
+      <p className=" mx-auto w-1/3">A Agropet Atacadão dos Bichos sempre busca atender melhor seus clientes.
       Por isso, estamos sempre abertos a ouvir a sua opinião.</p>
       {!success && <div className="my-5 mx-auto w-96 text-left">
         <label className="font-bold">Seu nome:</label>
@@ -64,13 +64,13 @@ const Pesquisa = () => {
         <label className="font-bold">Nota:</label>
         <div className="flex p-6">
           {notas.map((nota)=> {
-            return <label key={nota} className="w-1/6">{nota}<br/><input onChange={(evt) => setNota(evt.currentTarget.value)} type="radio" value={nota} name="Nota"/></label>
+            return <label key={nota} className="mr-12">{nota}<br/><input onChange={(evt) => setNota(evt.currentTarget.value)} type="radio" value={nota} name="Nota"/></label>
           })}
         </div>
         <label className="font-bold block">Sua crítica ou sugestão:</label>
         <input type="text" className="w-full block bg-blue-100 mb-5 p-2 rounded"/> 
-        <button onClick={save} type="button" className="px-16 py-4 bg-blue-400 block mx-auto rounded-lg hover:shadow-lg hover:bg-blue-500">
-          Dar opinião ou sugestão
+        <button onClick={save} type="button" className="px-24 py-4 bg-blue-400 block mx-auto rounded-lg hover:shadow-lg hover:bg-blue-500">
+          Enviar
         </button>
       </div>
       }

@@ -14,9 +14,9 @@ const Header = () => {
         </div>        
       </div>
       <div className="bg-gray-300 p-4 text-center">
-          <Link href="/sobre">
-            <a className="px-2 font-bold hover:underline">Sobre</a>
-          </Link>
+            <Link href="/sobre">
+              <a className="px-2 font-bold hover:underline">Sobre</a>
+            </Link>
           <Link href='/contato'>
             <a className="px-2 font-bold hover:underline">Contato</a>
           </Link>
