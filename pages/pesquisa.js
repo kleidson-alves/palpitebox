@@ -51,10 +51,10 @@ const Pesquisa = () => {
   return(
     <div className="my-10 text-center">
       <PageTitle title="Pesquisa"/>
-      <h1 className="font-bold mb-4 text-2xl">Críticas e sugestões</h1>
-      <p className=" mx-auto w-1/3">A Agropet Atacadão dos Bichos sempre busca atender melhor seus clientes.
+      <h1 className="font-bold mb-4 text-lg lg:text-2xl">Críticas e sugestões</h1>
+      <p className=" text-sm md:text-base mx-auto w-2/3 md:w-1/3">A Agropet Atacadão dos Bichos sempre busca atender melhor seus clientes.
       Por isso, estamos sempre abertos a ouvir a sua opinião.</p>
-      {!success && <div className="my-5 mx-auto w-96 text-left">
+      {!success && <div className="my-5 mx-auto w-7/12 md:w-96 text-left">
         <label className="font-bold">Seu nome:</label>
         <input onChange={(v) => setName(v.target.value)} type="text" className="w-full block bg-blue-100 mb-5 p-2 rounded" placeholder="Nome"/>
         <label className="font-bold">Email:</label>
@@ -62,9 +62,9 @@ const Pesquisa = () => {
         <label className="font-bold">Whatsapp:</label>
         <input onChange={(v) => setWhatsapp(v.target.value)} type="text" className="w-full block bg-blue-100 mb-5 p-2 rounded" placeholder="Whatsapp"/>
         <label className="font-bold">Nota:</label>
-        <div className="flex p-6">
+        <div className="flex py-6 md:p-6">
           {notas.map((nota)=> {
-            return <label key={nota} className="mr-12">{nota}<br/><input onChange={(evt) => setNota(evt.currentTarget.value)} type="radio" value={nota} name="Nota"/></label>
+            return <label key={nota} className="mr-6 md:mr-12">{nota}<br/><input onChange={(evt) => setNota(evt.currentTarget.value)} type="radio" value={nota} name="Nota"/></label>
           })}
         </div>
         <label className="font-bold block">Sua crítica ou sugestão:</label>
